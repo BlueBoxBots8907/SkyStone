@@ -14,5 +14,6 @@ apply from: '../build.common.gradle'
 // Custom definitions may go here
 dependencies {
     apply plugin: 'idea'
+    implementation 'com.acmerobotics.dashboard:dashboard:0.3.8'
     implementation 'org.openftc:easyopencv:1.3.1'
 }

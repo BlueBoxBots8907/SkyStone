@@ -460,7 +460,6 @@ public class FtcRobotControllerActivity extends Activity
 
     RobotLog.cancelWriteLogcatToDisk();
   }
-
   protected void bindToService() {
     readNetworkType();
     Intent intent = new Intent(this, FtcRobotControllerService.class);

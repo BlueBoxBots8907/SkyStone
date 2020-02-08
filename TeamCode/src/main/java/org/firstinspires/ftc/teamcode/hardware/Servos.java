@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 import org.openftc.revextensions2.ExpansionHubServo;
 
 public class Servos {
-    private ExpansionHubServo leftFoundationServo, rightFoundationServo, armServo, power, clawServo, capstoneServo;
+    private ExpansionHubServo leftFoundationServo, rightFoundationServo, armServo, power, clawServo, capstoneServo, testServo;
     // private CRServo clawServo;
 
     private final double LEFT_DOWN_POSITION = 0.2,
@@ -16,6 +16,7 @@ public class Servos {
             RIGHT_UP_POSITION = 0.75;
 
     public Servos(HardwareMap hardwareMap) {
+        testServo = hardwareMap.get(ExpansionHubServo.class, "testServo");
         leftFoundationServo = hardwareMap.get(ExpansionHubServo.class, "FoundationServoLeft");
         rightFoundationServo = hardwareMap.get(ExpansionHubServo.class, "FoundationServoRight");
         rightFoundationServo.setDirection(Servo.Direction.REVERSE);
