@@ -8,7 +8,7 @@ import org.openftc.revextensions2.ExpansionHubServo;
 
 public class Servos {
     private ExpansionHubServo leftFoundationServo, rightFoundationServo, armServo, power, clawServo, capstoneServo;
-    // private CRServo clawServo;
+    private CRServo tapeServo;
 
     private final double LEFT_DOWN_POSITION = 0.2,
             LEFT_UP_POSITION = 0.75,
@@ -22,6 +22,7 @@ public class Servos {
         armServo = hardwareMap.get(ExpansionHubServo.class, "armServo");
         clawServo = hardwareMap.get(ExpansionHubServo.class, "clawServo");
         power = hardwareMap.get(ExpansionHubServo.class, "power");
+        tapeServo = hardwareMap.get(CRServo.class, "tapeServo");
         capstoneServo = hardwareMap.get(ExpansionHubServo.class, "capstoneServo");
     }
 
@@ -52,5 +53,7 @@ public class Servos {
 
     public void dropCapstone() {capstoneServo.setPosition(0.3);}
     public void liftCapstone() {capstoneServo.setPosition(9);}
+
+    public void setTapePower(double power) {tapeServo.setPower(power);}
 
 }

@@ -95,7 +95,16 @@ public class Teleop extends LinearOpMode {
             else if (gamepad1.right_trigger >= 0.2)
                 DriveSpeed = 0.5;
 
-
+            if (gamepad1.y) {
+                servos.setTapePower(1);
+                sleep(2500);
+                servos.setTapePower(0);
+            }
+            else if (gamepad1.x) {
+                servos.setTapePower(-1);
+                sleep(2500);
+                servos.setTapePower(0);
+            }
             //Motor movement
             FLM.setPower((LeftStickY - LeftStickX) + RightStickX);
             BLM.setPower((LeftStickY + LeftStickX) + RightStickX);
