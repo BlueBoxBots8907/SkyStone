@@ -34,7 +34,7 @@ public class AutoOpmode extends LinearOpMode {
     private static int valMid = -1;
     private static int valLeft = -1;
     private static int valRight = -1;
-
+//
     private static float rectHeight = .6f/8f;
     private static float rectWidth = 1.5f/8f;
 
