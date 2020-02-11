@@ -28,7 +28,7 @@ public class AutoOpmode extends LinearOpMode {
     private CollectionAndLiftMotors cal;
     private Switches switches;
     private Servos hooks;
-//
+
     //0 means skystone, 1 means yellow stone
     //-1 for debug, but we can keep it like this because if it works, it should change to either 0 or 255
     private static int valMid = -1;
