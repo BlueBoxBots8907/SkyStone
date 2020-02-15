@@ -3,7 +3,6 @@ package auto
 import com.acmerobotics.roadrunner.geometry.Pose2d
 import com.acmerobotics.roadrunner.geometry.Vector2d
 import com.acmerobotics.roadrunner.util.Angle
-import com.sun.org.apache.xpath.internal.operations.*
 
 object FieldUtil {
     enum class Color {
