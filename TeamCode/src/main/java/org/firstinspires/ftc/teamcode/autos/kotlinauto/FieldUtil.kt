@@ -42,8 +42,8 @@ public object FieldUtil {
     @JvmStatic
     fun getStonePose(color: Color, index: Int): Pose2d {
         val pose = Pose2d(
-                -35.0 - index * 8.0 - 1.0,
-                36.0,
+                -25.5 - index * 7.0 - 1.0,
+                26.0,
                 Math.toRadians(245.0)
         )
         return if (color == FieldUtil.Color.RED) flip(pose) else pose
